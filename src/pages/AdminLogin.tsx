@@ -7,7 +7,6 @@ import { Label } from "@/components/ui/label";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 import { Lock } from "lucide-react";
-import seenHqLogo from "@/assets/seen-hq-icon-mark.jpg";
 
 const AdminLogin = () => {
   const navigate = useNavigate();
@@ -58,7 +57,7 @@ const AdminLogin = () => {
         className="w-full max-w-sm"
       >
         <div className="text-center mb-8">
-          <img src={seenHqLogo} alt="Seen HQ" className="w-48 mx-auto mb-6 rounded-xl" />
+          <img src="/seen-hq-logo.jpg" alt="Seen HQ" className="w-48 mx-auto mb-6 rounded-xl" />
           <h1 className="text-2xl font-heading font-bold">Admin Login</h1>
           <p className="text-sm text-muted-foreground font-body mt-1">Sign in to manage your platform</p>
         </div>

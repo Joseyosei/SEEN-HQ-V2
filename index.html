@@ -18,6 +18,20 @@
 
   <body>
     <div id="root"></div>
+    <script>
+      window.onerror = function(msg, src, line, col, err) {
+        var root = document.getElementById('root');
+        if (root && !root.hasChildNodes()) {
+          root.innerHTML = '<div style="font-family:sans-serif;padding:2rem;color:#111"><h2>Startup error</h2><pre style="background:#fee;padding:1rem;border-radius:8px;white-space:pre-wrap">' + msg + (err ? '\n' + err.stack : '') + '</pre></div>';
+        }
+      };
+      window.addEventListener('unhandledrejection', function(e) {
+        var root = document.getElementById('root');
+        if (root && !root.hasChildNodes()) {
+          root.innerHTML = '<div style="font-family:sans-serif;padding:2rem;color:#111"><h2>Unhandled rejection</h2><pre style="background:#fee;padding:1rem;border-radius:8px;white-space:pre-wrap">' + (e.reason ? (e.reason.stack || e.reason) : e) + '</pre></div>';
+        }
+      });
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

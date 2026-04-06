@@ -6,7 +6,6 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
-import seenHqLogo from "@/assets/seen-hq-icon-mark.jpg";
 
 const AuthPage = () => {
   const navigate = useNavigate();
@@ -82,7 +81,7 @@ const AuthPage = () => {
         className="w-full max-w-sm"
       >
         <div className="text-center mb-8">
-          <img src={seenHqLogo} alt="Seen HQ" className="w-48 mx-auto mb-6 rounded-xl" />
+          <img src="/seen-hq-logo.jpg" alt="Seen HQ" className="w-48 mx-auto mb-6 rounded-xl" />
           <h1 className="text-2xl font-heading font-bold">
             {isSignUp ? "Create Account" : "Welcome Back"}
           </h1>

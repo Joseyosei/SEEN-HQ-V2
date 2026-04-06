@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { Settings } from "lucide-react";
-import seenHqIcon from "@/assets/seen-hq-icon-mark.jpg";
 
 const Footer = () => {
   return (
@@ -9,7 +8,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-10">
           <div className="md:col-span-2">
             <Link to="/" className="inline-flex items-center gap-2 mb-4">
-              <img src={seenHqIcon} alt="Seen HQ" className="w-10 h-10 rounded-lg object-cover" />
+              <img src="/seen-hq-logo.jpg" alt="Seen HQ" className="w-10 h-10 rounded-lg object-cover" />
               <span className="text-2xl font-heading font-extrabold">
                 Seen<span className="text-gradient-orange">HQ</span>
               </span>
