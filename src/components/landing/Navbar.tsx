@@ -3,8 +3,6 @@ import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { Menu, X, Sun, Moon } from "lucide-react";
 import { useTheme } from "next-themes";
-import seenHqIcon from "@/assets/seen-hq-icon-mark.jpg";
-
 const navLinks = [
   { label: "Categories", href: "/categories" },
   { label: "Contact", href: "/contact" },
@@ -36,11 +34,8 @@ const Navbar = () => {
     >
       <div className="container px-4 h-16 flex items-center justify-between">
         {/* Logo on left */}
-        <Link to="/" className="flex items-center gap-2">
-          <img src={seenHqIcon} alt="Seen HQ" className="w-9 h-9 rounded-lg object-cover" />
-          <span className="text-xl font-heading font-extrabold">
-            Seen<span className="text-gradient-orange">HQ</span>
-          </span>
+        <Link to="/" className="flex items-center">
+          <img src="/seen-hq-logo.jpg" alt="Seen HQ" className="h-10 w-auto rounded-lg object-contain" />
         </Link>
 
         {/* Desktop nav links */}
