@@ -4,12 +4,12 @@ import { useState, useEffect } from "react";
 import { Menu, X, Sun, Moon } from "lucide-react";
 import { useTheme } from "next-themes";
 const navLinks = [
-  { label: "Categories", href: "/categories" },
-  { label: "Contact", href: "/contact" },
   { label: "How It Works", href: "/how-it-works" },
-  { label: "Media Hub", href: "/media-hub" },
+  { label: "Clients", href: "/clients" },
   { label: "Pricing", href: "/pricing" },
+  { label: "Categories", href: "/categories" },
   { label: "Results", href: "/results" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const Navbar = () => {

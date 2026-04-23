@@ -13,6 +13,7 @@ import CategoriesPage from "./pages/CategoriesPage";
 import PricingPage from "./pages/PricingPage";
 import MediaHubPage from "./pages/MediaHubPage";
 import ResultsPage from "./pages/ResultsPage";
+import ClientsPage from "./pages/ClientsPage";
 import ContactPage from "./pages/ContactPage";
 import AuthPage from "./pages/AuthPage";
 import DashboardPage from "./pages/DashboardPage";
@@ -43,6 +44,7 @@ const App = () => (
             <Route path="/success" element={<SuccessPage />} />
             <Route path="/media-hub" element={<MediaHubPage />} />
             <Route path="/results" element={<ResultsPage />} />
+            <Route path="/clients" element={<ClientsPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/login" element={<AuthPage />} />
             <Route path="/signup" element={<AuthPage />} />

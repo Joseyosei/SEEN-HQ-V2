@@ -97,4 +97,19 @@ export const FAQ_ITEMS = [
   },
 ];
 
-export const TESTIMONIALS: { name: string; category: string; rating: number; quote: string }[] = [];
+export const TESTIMONIALS: { name: string; category: string; rating: number; quote: string }[] = [
+  {
+    name: "Nero Lounge Restaurant",
+    category: "Restaurant & Dining",
+    rating: 5,
+    quote:
+      "Seen HQ perfectly captured the atmosphere and energy of Nero Lounge. The content felt authentic and our bookings have noticeably increased since.",
+  },
+  {
+    name: "Bella Rae Studios",
+    category: "Health & Wellness · London",
+    rating: 5,
+    quote:
+      "The videos Seen HQ produced for us were exactly on-brand. We saw a spike in enquiries from Instagram within the first week of posting.",
+  },
+];
