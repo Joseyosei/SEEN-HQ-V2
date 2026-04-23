@@ -2,7 +2,6 @@ import Navbar from "@/components/landing/Navbar";
 import Hero from "@/components/landing/Hero";
 import StatsBar from "@/components/landing/StatsBar";
 import SocialStrip from "@/components/landing/SocialStrip";
-import PlatformLogos from "@/components/landing/PlatformLogos";
 import HowItWorks from "@/components/landing/HowItWorks";
 import Categories from "@/components/landing/Categories";
 import Pricing from "@/components/landing/Pricing";
@@ -24,7 +23,6 @@ const Index = () => {
       <Hero />
       <StatsBar />
       <SocialStrip />
-      <PlatformLogos />
       <HowItWorks />
       <Categories />
       <Pricing />
